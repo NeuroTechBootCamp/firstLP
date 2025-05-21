@@ -288,17 +288,17 @@
                   action="https://formspree.io/f/mnndrodg"
                   method="POST"
                   class="contact-form"
+                  id="contact-form"
                 >
-                <div class="form-group">
-                    <label for="name">お名前<span class="required">*</span></label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">メールアドレス<span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="age">年齢<span class="required">*</span></label>
+                  <label>
+                    メールアドレス:
+                    <input type="email" name="email"><span class="required">*</span>
+                  </label>
+                  <label>
+                    お名前:
+                    <input type="name" name="name"><span class="required">*</span>
+                  </label>
+                  <label for="age">年齢<span class="required">*</span></label>
                     <select id="age" name="age" required>
                         <option value="">選択してください</option>
                         <option value="30s">30代</option>
@@ -306,45 +306,21 @@
                         <option value="50s">50代</option>
                         <option value="60s">60代以上</option>
                     </select>
-                </div>
-                <div class="form-group">
-                    <label for="inquiry">お問い合わせ内容<span class="required">*</span></label>
+                  </label>   
+                  <label for="inquiry">お問い合わせ内容<span class="required">*</span></label>
                     <select id="inquiry" name="inquiry" required>
                         <option value="">選択してください</option>
                         <option value="seminar">無料説明会に参加したい</option>
                         <option value="consultation">個別相談を希望する</option>
                         <option value="material">資料請求のみ</option>
                     </select>
-                </div>
-                <div class="form-group full-width">
-                    <label for="message">メッセージ</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                </div>
-                <div class="form-group full-width">
-                    <label class="checkbox-container">
-                        <input type="checkbox" id="privacy" name="privacy" required>
-                        <span class="checkmark"></span>
-                        <a href="#" target="_blank">プライバシーポリシー</a>に同意する
-                    </label>
-                </div>
-                <button type="submit" class="submit-button">送信する</button>
-            </form>
-            <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mnndrodg"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+                </label>
+                  <label>
+                    Your message:
+                    <textarea id="message" name="message"></textarea>
+                  </label>
+                  <!-- your other form fields go here -->
+                  <button type="submit">Send</button>
         </div>
     </section>
 
